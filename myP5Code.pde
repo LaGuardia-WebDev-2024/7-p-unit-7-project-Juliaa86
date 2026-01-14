@@ -6,7 +6,7 @@ void setup() {
 //🎯Variable Declarations Go Here
 var leftX = 90;
 var rightX = 520;
-
+var Petals = 87;
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
@@ -25,10 +25,35 @@ draw = function(){
   ellipse(rightX-62, 52, 70, 60);
  
  // Stem
- 
+ fill(0,200,0)
+ rect(277,313,30,237);
+ ellipse(215,514,124,46);
+ ellipse(374,438,134,46);
+
+ //Flower
+ fill(200,0,0);
+ellipse(290,220,Petals,Petals);
+ellipse(240,290,Petals,Petals);
+ellipse(322,299,Petals,Petals);
+fill(200,200,0);
+ellipse(290,260,46,46);
+point(285,251)
+point(295,268)
+point(278,266)
+point(300,258)
+point(288,260)
+point(295,252)
+point(286,273)
+point(306,266)
+point(277,258)
+point(297,278)
+point(304,251)
+point(280,249)
+point(291,245)
+point(279,277)
  
   rightX = rightX -1
-  leftX = leftX +1
+  leftX = leftX +1;
 
   if(leftX > 600){leftX = -100}
   if(rightX < -50){rightX = 600}
